@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CA2041EC15B6E000D0044 /* AppDelegate.swift */; };
-		863CA2071EC15B6E000D0044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CA2061EC15B6E000D0044 /* ViewController.swift */; };
 		863CA20A1EC15B6E000D0044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863CA2081EC15B6E000D0044 /* Main.storyboard */; };
 		863CA20C1EC15B6E000D0044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863CA20B1EC15B6E000D0044 /* Assets.xcassets */; };
 		863CA20F1EC15B6E000D0044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863CA20D1EC15B6E000D0044 /* LaunchScreen.storyboard */; };
 		863CA21A1EC15B6E000D0044 /* MyTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CA2191EC15B6E000D0044 /* MyTripTests.swift */; };
 		863CA2251EC15B6E000D0044 /* MyTripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CA2241EC15B6E000D0044 /* MyTripUITests.swift */; };
+		864EB4761EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4751EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift */; };
+		864EB4781EC20A8800223D2C /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4771EC20A8800223D2C /* GooglePlaces.framework */; };
+		864EB47A1EC20BA200223D2C /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4791EC20BA200223D2C /* GoogleMapsBase.framework */; };
+		864EB47D1EC20C1B00223D2C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB47C1EC20C1B00223D2C /* Accelerate.framework */; };
+		864EB47F1EC20C2600223D2C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB47E1EC20C2600223D2C /* CoreData.framework */; };
+		864EB4811EC20C3100223D2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4801EC20C3100223D2C /* CoreGraphics.framework */; };
+		864EB4831EC20C3B00223D2C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4821EC20C3B00223D2C /* CoreLocation.framework */; };
+		864EB4851EC20C4600223D2C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4841EC20C4600223D2C /* CoreText.framework */; };
+		864EB4871EC20C4F00223D2C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4861EC20C4F00223D2C /* GLKit.framework */; };
+		864EB4891EC20C5900223D2C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4881EC20C5900223D2C /* ImageIO.framework */; };
+		864EB48B1EC20C7400223D2C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB48A1EC20C7400223D2C /* libc++.tbd */; };
+		864EB48D1EC20C7E00223D2C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB48C1EC20C7E00223D2C /* libz.tbd */; };
+		864EB48F1EC20C8900223D2C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB48E1EC20C8900223D2C /* OpenGLES.framework */; };
+		864EB4911EC20C9600223D2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4901EC20C9600223D2C /* QuartzCore.framework */; };
+		864EB4931EC20CA000223D2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4921EC20CA000223D2C /* SystemConfiguration.framework */; };
+		864EB4951EC20CAC00223D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4941EC20CAC00223D2C /* UIKit.framework */; };
+		864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4961EC214D900223D2C /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +52,6 @@
 /* Begin PBXFileReference section */
 		863CA2011EC15B6E000D0044 /* MyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863CA2041EC15B6E000D0044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		863CA2061EC15B6E000D0044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		863CA2091EC15B6E000D0044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		863CA20B1EC15B6E000D0044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863CA20E1EC15B6E000D0044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,23 @@
 		863CA2201EC15B6E000D0044 /* MyTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		863CA2241EC15B6E000D0044 /* MyTripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripUITests.swift; sourceTree = "<group>"; };
 		863CA2261EC15B6E000D0044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		864EB4751EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		864EB4771EC20A8800223D2C /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		864EB4791EC20BA200223D2C /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		864EB47C1EC20C1B00223D2C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		864EB47E1EC20C2600223D2C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		864EB4801EC20C3100223D2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		864EB4821EC20C3B00223D2C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		864EB4841EC20C4600223D2C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		864EB4861EC20C4F00223D2C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		864EB4881EC20C5900223D2C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		864EB48A1EC20C7400223D2C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		864EB48C1EC20C7E00223D2C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		864EB48E1EC20C8900223D2C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		864EB4901EC20C9600223D2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		864EB4921EC20CA000223D2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		864EB4941EC20CAC00223D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		864EB4961EC214D900223D2C /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864EB4951EC20CAC00223D2C /* UIKit.framework in Frameworks */,
+				864EB4931EC20CA000223D2C /* SystemConfiguration.framework in Frameworks */,
+				864EB4911EC20C9600223D2C /* QuartzCore.framework in Frameworks */,
+				864EB48F1EC20C8900223D2C /* OpenGLES.framework in Frameworks */,
+				864EB48D1EC20C7E00223D2C /* libz.tbd in Frameworks */,
+				864EB48B1EC20C7400223D2C /* libc++.tbd in Frameworks */,
+				864EB4891EC20C5900223D2C /* ImageIO.framework in Frameworks */,
+				864EB4871EC20C4F00223D2C /* GLKit.framework in Frameworks */,
+				864EB4851EC20C4600223D2C /* CoreText.framework in Frameworks */,
+				864EB4831EC20C3B00223D2C /* CoreLocation.framework in Frameworks */,
+				864EB4811EC20C3100223D2C /* CoreGraphics.framework in Frameworks */,
+				864EB47F1EC20C2600223D2C /* CoreData.framework in Frameworks */,
+				864EB47D1EC20C1B00223D2C /* Accelerate.framework in Frameworks */,
+				864EB4781EC20A8800223D2C /* GooglePlaces.framework in Frameworks */,
+				864EB47A1EC20BA200223D2C /* GoogleMapsBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +124,13 @@
 		863CA1F81EC15B6E000D0044 = {
 			isa = PBXGroup;
 			children = (
+				864EB4791EC20BA200223D2C /* GoogleMapsBase.framework */,
+				864EB4771EC20A8800223D2C /* GooglePlaces.framework */,
 				863CA2031EC15B6E000D0044 /* MyTrip */,
 				863CA2181EC15B6E000D0044 /* MyTripTests */,
 				863CA2231EC15B6E000D0044 /* MyTripUITests */,
 				863CA2021EC15B6E000D0044 /* Products */,
+				864EB47B1EC20C1B00223D2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +148,12 @@
 			isa = PBXGroup;
 			children = (
 				863CA2041EC15B6E000D0044 /* AppDelegate.swift */,
-				863CA2061EC15B6E000D0044 /* ViewController.swift */,
 				863CA2081EC15B6E000D0044 /* Main.storyboard */,
+				864EB4751EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift */,
 				863CA20B1EC15B6E000D0044 /* Assets.xcassets */,
 				863CA20D1EC15B6E000D0044 /* LaunchScreen.storyboard */,
 				863CA2101EC15B6E000D0044 /* Info.plist */,
+				864EB4961EC214D900223D2C /* LocationViewController.swift */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -123,6 +174,26 @@
 				863CA2261EC15B6E000D0044 /* Info.plist */,
 			);
 			path = MyTripUITests;
+			sourceTree = "<group>";
+		};
+		864EB47B1EC20C1B00223D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				864EB4941EC20CAC00223D2C /* UIKit.framework */,
+				864EB4921EC20CA000223D2C /* SystemConfiguration.framework */,
+				864EB4901EC20C9600223D2C /* QuartzCore.framework */,
+				864EB48E1EC20C8900223D2C /* OpenGLES.framework */,
+				864EB48C1EC20C7E00223D2C /* libz.tbd */,
+				864EB48A1EC20C7400223D2C /* libc++.tbd */,
+				864EB4881EC20C5900223D2C /* ImageIO.framework */,
+				864EB4861EC20C4F00223D2C /* GLKit.framework */,
+				864EB4841EC20C4600223D2C /* CoreText.framework */,
+				864EB4821EC20C3B00223D2C /* CoreLocation.framework */,
+				864EB4801EC20C3100223D2C /* CoreGraphics.framework */,
+				864EB47E1EC20C2600223D2C /* CoreData.framework */,
+				864EB47C1EC20C1B00223D2C /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863CA2071EC15B6E000D0044 /* ViewController.swift in Sources */,
+				864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */,
 				863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */,
+				864EB4761EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +430,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,6 +474,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,6 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
@@ -424,6 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
@@ -505,6 +587,7 @@
 				863CA22B1EC15B6E000D0044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		863CA22C1EC15B6E000D0044 /* Build configuration list for PBXNativeTarget "MyTripTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +596,7 @@
 				863CA22E1EC15B6E000D0044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		863CA22F1EC15B6E000D0044 /* Build configuration list for PBXNativeTarget "MyTripUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +605,7 @@
 				863CA2311EC15B6E000D0044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
