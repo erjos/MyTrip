@@ -30,6 +30,8 @@
 		864EB4931EC20CA000223D2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4921EC20CA000223D2C /* SystemConfiguration.framework */; };
 		864EB4951EC20CAC00223D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4941EC20CAC00223D2C /* UIKit.framework */; };
 		864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4961EC214D900223D2C /* LocationViewController.swift */; };
+		869473EC1EC233CE0040D717 /* GMSPlaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */; };
+		869473EE1EC236440040D717 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869473ED1EC236440040D717 /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		864EB4921EC20CA000223D2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		864EB4941EC20CAC00223D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		864EB4961EC214D900223D2C /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSPlaceObject.swift; sourceTree = "<group>"; };
+		869473ED1EC236440040D717 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +128,6 @@
 		863CA1F81EC15B6E000D0044 = {
 			isa = PBXGroup;
 			children = (
-				864EB4791EC20BA200223D2C /* GoogleMapsBase.framework */,
-				864EB4771EC20A8800223D2C /* GooglePlaces.framework */,
 				863CA2031EC15B6E000D0044 /* MyTrip */,
 				863CA2181EC15B6E000D0044 /* MyTripTests */,
 				863CA2231EC15B6E000D0044 /* MyTripUITests */,
@@ -154,6 +156,8 @@
 				863CA20D1EC15B6E000D0044 /* LaunchScreen.storyboard */,
 				863CA2101EC15B6E000D0044 /* Info.plist */,
 				864EB4961EC214D900223D2C /* LocationViewController.swift */,
+				869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */,
+				869473ED1EC236440040D717 /* Trip.swift */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -179,6 +183,8 @@
 		864EB47B1EC20C1B00223D2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				864EB4771EC20A8800223D2C /* GooglePlaces.framework */,
+				864EB4791EC20BA200223D2C /* GoogleMapsBase.framework */,
 				864EB4941EC20CAC00223D2C /* UIKit.framework */,
 				864EB4921EC20CA000223D2C /* SystemConfiguration.framework */,
 				864EB4901EC20C9600223D2C /* QuartzCore.framework */,
@@ -330,8 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869473EE1EC236440040D717 /* Trip.swift in Sources */,
 				864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */,
 				863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */,
+				869473EC1EC233CE0040D717 /* GMSPlaceObject.swift in Sources */,
 				864EB4761EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

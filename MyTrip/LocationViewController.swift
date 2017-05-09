@@ -10,7 +10,11 @@ import UIKit
 import GooglePlaces
 
 class LocationViewController: UIViewController {
-
+    
+    @IBOutlet weak var placeID: UILabel!
+    @IBOutlet weak var placeCoordinate: UILabel!
+    @IBOutlet weak var placeName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +23,10 @@ class LocationViewController: UIViewController {
         //this line requires the extension of the delegate protocol
         autocompleteController.delegate = self
         present(autocompleteController, animated: true, completion: nil)
+        
+        placeID.isHidden = true
+        placeCoordinate.isHidden = true
+        placeName.isHidden = true
        
     }
 
@@ -37,16 +45,30 @@ class LocationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
 extension LocationViewController: GMSAutocompleteViewControllerDelegate{
     // Handle the user's selection.
+    
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         print("Place name: \(place.name)")
         print("Place address: \(place.formattedAddress)")
         print("Place attributions: \(place.attributions)")
+        print("Place coordinate: \(place.coordinate)")
+        print("Place ID: \(place.placeID)")
         dismiss(animated: true, completion: nil)
+        
+//        let trip = Trip(trip: place)
+        
+        placeID.text = place.placeID
+        placeCoordinate.text = String(describing: place.coordinate)
+        placeName.text = place.name
+        
+        placeID.isHidden = false
+        placeCoordinate.isHidden = false
+        placeName.isHidden = false
+        
+        
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
