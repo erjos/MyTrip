@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1496.8" y="105.69715142428787"/>
         </scene>
-        <!--My Trip-->
+        <!--New Trip-->
         <scene sceneID="1Wa-dX-bVz">
             <objects>
-                <viewController title="My Trip" id="QhE-n8-qXX" customClass="LocationViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="New Trip" id="QhE-n8-qXX" customClass="TripNameViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KZV-9S-W43"/>
                         <viewControllerLayoutGuide type="bottom" id="aGg-6L-LDv"/>
@@ -100,22 +100,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0H-eu-s9u">
-                                <rect key="frame" x="16" y="88" width="130" height="21"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a name for your trip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6D-9Z-4Ey">
+                                <rect key="frame" x="22" y="91" width="331" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9T-62-ZMt">
+                                <rect key="frame" x="307" y="139" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="OpenLocationModal:" destination="QhE-n8-qXX" eventType="touchUpInside" id="5hA-aI-8h4"/>
+                                    <segue destination="7uI-C6-fCy" kind="show" identifier="NameToLocation" id="f8t-sn-YEX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tripNameEntry" destination="G6D-9Z-4Ey" id="iYs-ef-e4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1U-AK-NTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232.8000000000002" y="105.69715142428787"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="i3l-Qf-X6c">
+            <objects>
+                <viewController title="Location" id="7uI-C6-fCy" customClass="LocationViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAd-QJ-EbN"/>
+                        <viewControllerLayoutGuide type="bottom" id="9C6-AD-SnF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ejl-Fk-UgL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-2O-ooL">
+                                <rect key="frame" x="126" y="107" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search Location"/>
+                                <connections>
+                                    <action selector="SearchLocation:" destination="7uI-C6-fCy" eventType="touchUpInside" id="55X-nu-yKl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="QKb-Ll-Efk" kind="show" identifier="LocationToFinish" id="ADM-uU-bPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qa2-5S-LNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2922.4000000000001" y="105.69715142428787"/>
+        </scene>
+        <!--Finish-->
+        <scene sceneID="H86-Y2-YX2">
+            <objects>
+                <viewController title="Finish" id="QKb-Ll-Efk" customClass="FinishViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RL8-Ou-mOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="UJq-x3-g4Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ucK-Tf-wvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trip Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AL-49-V6K">
+                                <rect key="frame" x="26" y="99" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coordinate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="299-sY-SBR">
-                                <rect key="frame" x="16" y="117" width="130" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Place ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKo-Bg-R5V">
-                                <rect key="frame" x="16" y="146" width="130" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la0-t6-dnh">
+                                <rect key="frame" x="26" y="142" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -124,16 +188,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="placeCoordinate" destination="299-sY-SBR" id="xna-uX-XE3"/>
-                        <outlet property="placeID" destination="OKo-Bg-R5V" id="0Qk-an-gn5"/>
-                        <outlet property="placeName" destination="P0H-eu-s9u" id="onW-9G-HlF"/>
+                        <outlet property="location" destination="la0-t6-dnh" id="p1l-2w-4Uw"/>
+                        <outlet property="tripName" destination="2AL-49-V6K" id="gzx-hH-H4M"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n1U-AK-NTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBh-k3-2Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2232.8000000000002" y="105.69715142428787"/>
+            <point key="canvasLocation" x="3589.5999999999999" y="106.59670164917542"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7U7-KG-5OX">
@@ -151,7 +213,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBb-ai-aiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557.60000000000002" y="105.69715142428787"/>
+            <point key="canvasLocation" x="714" y="106"/>
         </scene>
     </scenes>
 </document>

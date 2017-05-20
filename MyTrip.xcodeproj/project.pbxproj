@@ -29,9 +29,11 @@
 		864EB4911EC20C9600223D2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4901EC20C9600223D2C /* QuartzCore.framework */; };
 		864EB4931EC20CA000223D2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4921EC20CA000223D2C /* SystemConfiguration.framework */; };
 		864EB4951EC20CAC00223D2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864EB4941EC20CAC00223D2C /* UIKit.framework */; };
-		864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4961EC214D900223D2C /* LocationViewController.swift */; };
+		864EB4971EC214D900223D2C /* TripNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4961EC214D900223D2C /* TripNameViewController.swift */; };
 		869473EC1EC233CE0040D717 /* GMSPlaceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */; };
 		869473EE1EC236440040D717 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869473ED1EC236440040D717 /* Trip.swift */; };
+		86C9DA0D1EC4DC6F001BE609 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */; };
+		86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD991B1ED0E2AB00668255 /* FinishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +82,11 @@
 		864EB4901EC20C9600223D2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		864EB4921EC20CA000223D2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		864EB4941EC20CAC00223D2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		864EB4961EC214D900223D2C /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		864EB4961EC214D900223D2C /* TripNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripNameViewController.swift; sourceTree = "<group>"; };
 		869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSPlaceObject.swift; sourceTree = "<group>"; };
 		869473ED1EC236440040D717 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		86DD991B1ED0E2AB00668255 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +159,11 @@
 				863CA20B1EC15B6E000D0044 /* Assets.xcassets */,
 				863CA20D1EC15B6E000D0044 /* LaunchScreen.storyboard */,
 				863CA2101EC15B6E000D0044 /* Info.plist */,
-				864EB4961EC214D900223D2C /* LocationViewController.swift */,
+				864EB4961EC214D900223D2C /* TripNameViewController.swift */,
 				869473EB1EC233CE0040D717 /* GMSPlaceObject.swift */,
 				869473ED1EC236440040D717 /* Trip.swift */,
+				86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */,
+				86DD991B1ED0E2AB00668255 /* FinishViewController.swift */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -337,8 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				869473EE1EC236440040D717 /* Trip.swift in Sources */,
-				864EB4971EC214D900223D2C /* LocationViewController.swift in Sources */,
+				864EB4971EC214D900223D2C /* TripNameViewController.swift in Sources */,
 				863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */,
+				86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */,
+				86C9DA0D1EC4DC6F001BE609 /* LocationViewController.swift in Sources */,
 				869473EC1EC233CE0040D717 /* GMSPlaceObject.swift in Sources */,
 				864EB4761EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift in Sources */,
 			);
