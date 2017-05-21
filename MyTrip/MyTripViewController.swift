@@ -15,9 +15,16 @@ class MyTripViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let backButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(backButtonPressed(_:)))
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    func backButtonPressed(_ sender: UIBarButtonItem){
+        performSegue(withIdentifier: "MyTripToMenu", sender: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return

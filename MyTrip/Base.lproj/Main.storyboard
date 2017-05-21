@@ -198,6 +198,7 @@
                     <connections>
                         <outlet property="tripLocation" destination="i2m-gJ-O2d" id="ayG-ru-tf5"/>
                         <outlet property="tripName" destination="5pG-Qo-Mzu" id="Fue-Jf-hf2"/>
+                        <segue destination="cme-Av-yEU" kind="show" identifier="MyTripToMenu" id="b32-jI-fsQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfp-1g-FVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,4 +271,7 @@
             <point key="canvasLocation" x="714" y="106"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="b32-jI-fsQ"/>
+    </inferredMetricsTieBreakers>
 </document>
