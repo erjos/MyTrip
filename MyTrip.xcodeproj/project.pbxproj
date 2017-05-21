@@ -34,6 +34,7 @@
 		869473EE1EC236440040D717 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869473ED1EC236440040D717 /* Trip.swift */; };
 		86C9DA0D1EC4DC6F001BE609 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */; };
 		86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD991B1ED0E2AB00668255 /* FinishViewController.swift */; };
+		86DD995C1ED0EB7100668255 /* Trip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		869473ED1EC236440040D717 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		86DD991B1ED0E2AB00668255 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		86DD995B1ED0EB7100668255 /* Trip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trip.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				869473ED1EC236440040D717 /* Trip.swift */,
 				86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */,
 				86DD991B1ED0E2AB00668255 /* FinishViewController.swift */,
+				86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86DD995C1ED0EB7100668255 /* Trip.xcdatamodeld in Sources */,
 				869473EE1EC236440040D717 /* Trip.swift in Sources */,
 				864EB4971EC214D900223D2C /* TripNameViewController.swift in Sources */,
 				863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */,
@@ -624,6 +628,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86DD995B1ED0EB7100668255 /* Trip.xcdatamodel */,
+			);
+			currentVersion = 86DD995B1ED0EB7100668255 /* Trip.xcdatamodel */;
+			name = Trip.xcdatamodeld;
+			path = ../Trip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 863CA1F91EC15B6E000D0044 /* Project object */;
 }

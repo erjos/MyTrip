@@ -8,6 +8,7 @@
 
 import UIKit
 import GooglePlaces
+import CoreData
 
 class FinishViewController: UIViewController {
     
@@ -17,6 +18,33 @@ class FinishViewController: UIViewController {
     @IBOutlet weak var tripName: UILabel!
     @IBOutlet weak var location: UILabel!
     
+    @IBAction func startPlanning(_ sender: Any) {
+        self.saveTrip(name!, placeName!)
+        performSegue(withIdentifier: "FinishToTrip", sender: self)
+    }
+    
+    //Save trip to core data - will fetch on the next page
+    func saveTrip(_ name: String, _ placeName: String){
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Trip", in: managedContext)!
+        
+        let trip = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        trip.setValue(name, forKey: "name")
+        trip.setValue(placeName, forKey: "placeName")
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,18 +54,5 @@ class FinishViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
