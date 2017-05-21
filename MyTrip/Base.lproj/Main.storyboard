@@ -47,7 +47,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Trip History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NNk-1C-Cfk">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="My Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NNk-1C-Cfk">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -56,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="W7R-WK-r0l" kind="show" id="p0H-sf-KQx"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nWu-0I-FXu" style="IBUITableViewCellStyleDefault" id="HCN-0x-H3W">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -159,6 +162,37 @@
             </objects>
             <point key="canvasLocation" x="2852" y="106"/>
         </scene>
+        <!--Trips View Controller-->
+        <scene sceneID="eCD-6L-Bc7">
+            <objects>
+                <viewController id="W7R-WK-r0l" customClass="TripsViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yov-MB-kXJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Eb-wG-UqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6nl-Wu-9U2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-A4-YWm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="W7R-WK-r0l" id="oGO-ho-zBk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nNe-A4-YWm" id="Mud-9D-LI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="422-hB-7ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2221.5999999999999" y="-667.01649175412297"/>
+        </scene>
         <!--My Trip-->
         <scene sceneID="GA3-0M-4Uw">
             <objects>
@@ -203,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfp-1g-FVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3564" y="-636.4317841079461"/>
+            <point key="canvasLocation" x="3428" y="-667"/>
         </scene>
         <!--Finish-->
         <scene sceneID="H86-Y2-YX2">
