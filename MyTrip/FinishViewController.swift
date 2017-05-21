@@ -45,6 +45,12 @@ class FinishViewController: UIViewController {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as? MyTripViewController
+        controller?.name = self.name
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

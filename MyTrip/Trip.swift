@@ -7,15 +7,8 @@
 //
 
 import Foundation
-import GooglePlaces
 
-class Trip {
-    var name : String
-    
-    //can get around passing the param into the initializer by using optionals, could also set a default value, but this defaults to nil
-    var location : GMSPlace?
-    
-    init(name: String){
-        self.name = name
-    }
+class MyTrip {
+    var name : String?
+    var placeName : String?
 }
