@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86337AFC1EFAE266008D52AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86337AFB1EFAE266008D52AE /* MainViewController.swift */; };
 		863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CA2041EC15B6E000D0044 /* AppDelegate.swift */; };
 		863CA20A1EC15B6E000D0044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863CA2081EC15B6E000D0044 /* Main.storyboard */; };
 		863CA20C1EC15B6E000D0044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863CA20B1EC15B6E000D0044 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86337AFB1EFAE266008D52AE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		863CA2011EC15B6E000D0044 /* MyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863CA2041EC15B6E000D0044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		863CA2091EC15B6E000D0044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				863CA2101EC15B6E000D0044 /* Info.plist */,
 				869473ED1EC236440040D717 /* Trip.swift */,
 				86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */,
+				86337AFB1EFAE266008D52AE /* MainViewController.swift */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				TargetAttributes = {
 					863CA2001EC15B6E000D0044 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MNG4S554VZ;
 						ProvisioningStyle = Automatic;
 					};
 					863CA2141EC15B6E000D0044 = {
@@ -365,6 +369,7 @@
 				86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */,
 				86C9DA0D1EC4DC6F001BE609 /* LocationViewController.swift in Sources */,
 				864EB4761EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift in Sources */,
+				86337AFC1EFAE266008D52AE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,13 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNG4S554VZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erj.MyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -534,13 +540,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MNG4S554VZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erj.MyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
