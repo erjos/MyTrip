@@ -5,12 +5,14 @@ class TripListViewController: UIViewController {
     
     var trips : [NSManagedObject] = []
     
+    @IBOutlet weak var noTripsLabel: UILabel!
     @IBOutlet weak var tripListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tripListTableView.dataSource = self
         tripListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        noTripsLabel.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -25,6 +27,12 @@ class TripListViewController: UIViewController {
         } catch let error as NSError{
             print("Could not fetch. \(error), \(error.userInfo)")
         }
+        
+        if( trips.count == 0){
+            tripListTableView.isHidden = true
+            noTripsLabel.isHidden = false
+        }
+        
     }
 }
 
