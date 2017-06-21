@@ -3,8 +3,10 @@ import Foundation
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var menuIcon: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -12,23 +14,49 @@ class MainViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableViewHeight.constant = 0
+        setupTapGesture()
+        setupCloseMenuTapGesture()
     }
     
     func setupTapGesture() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleMenuTap(_:)))
         tap.delegate = self
+        menuIcon.addGestureRecognizer(tap)
+    }
+    
+    func setupCloseMenuTapGesture(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleCloseMenuTap(_:)))
+        tap.delegate = self
         self.view.addGestureRecognizer(tap)
     }
     
-    func handleMenuTap(_ sender: UITapGestureRecognizer){
+    func collapseMenu(){
+        if(tableViewHeight.constant != 0){
+            tableViewHeight.constant = 0
+        }
         
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut
+            , animations: {
+                self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
-    
-    override func viewDidAppear(_ animated: Bool) {
-        //tableViewHeight.constant = 91
+    func handleCloseMenuTap(_ sender: UITapGestureRecognizer){
+        collapseMenu()
     }
-
+    
+    func handleMenuTap(_ sender: UITapGestureRecognizer){
+        if(tableViewHeight.constant == 0){
+            tableViewHeight.constant = 91
+        }else{
+            collapseMenu()
+        }
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut
+            , animations: {
+                self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
 }
 
 //may not need to make this a delegate...
@@ -53,6 +81,7 @@ extension MainViewController: UITableViewDataSource{
         } else {
             text = "Settings"
         }
+        cell.backgroundColor = UIColor.lightGray
         cell.textLabel?.text = text
         return cell
     }

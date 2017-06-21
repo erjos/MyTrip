@@ -282,7 +282,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tfW-KD-r9G">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tfW-KD-r9G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35300440440000003" green="0.35455117450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -315,7 +315,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wS-aBU">
                                 <rect key="frame" x="0.0" y="20" width="375" height="68"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="xez-1Z-8oY">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="xez-1Z-8oY">
                                         <rect key="frame" x="11" y="17" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -338,6 +338,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="91" id="MNO-GW-Oh9"/>
                                 </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.84201495329999998" green="0.83755984780000003" blue="0.84647005890000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ej1-17-lUQ" style="IBUITableViewCellStyleDefault" id="Ynr-nr-hlx">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -394,6 +395,7 @@
                     <navigationItem key="navigationItem" title="Trips" id="gHc-91-SCN"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="menuIcon" destination="xez-1Z-8oY" id="Sf6-QK-6cq"/>
                         <outlet property="tableView" destination="hIO-ax-Arp" id="0NL-dq-gDo"/>
                         <outlet property="tableViewHeight" destination="MNO-GW-Oh9" id="rc3-aV-swa"/>
                     </connections>
