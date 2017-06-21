@@ -2,14 +2,26 @@ import UIKit
 
 class TripListViewController: UIViewController {
 
+    @IBOutlet weak var tripListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tripListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension TripListViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //will return number of trips
+        return 5
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
+}
+
+extension TripListViewController: UITableViewDelegate{
+    
 }

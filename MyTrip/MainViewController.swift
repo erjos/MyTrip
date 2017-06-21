@@ -4,6 +4,7 @@ import Foundation
 class MainViewController: UIViewController {
 
     @IBOutlet weak var menuIcon: UIImageView!
+    @IBOutlet weak var contentContainer: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
     
@@ -16,6 +17,16 @@ class MainViewController: UIViewController {
         tableViewHeight.constant = 0
         setupTapGesture()
         setupCloseMenuTapGesture()
+        setupTripListTable()
+    }
+    
+    func setupTripListTable(){
+        let tripListVC = TripListViewController()
+        self.addChildViewController(tripListVC)
+        tripListVC.view.autoresizingMask =  [.flexibleWidth, .flexibleHeight]
+        contentContainer.addSubview(tripListVC.view)
+        tripListVC.view.frame = contentContainer.bounds
+        tripListVC.didMove(toParentViewController: self)
     }
     
     func setupTapGesture() {

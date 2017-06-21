@@ -421,6 +421,7 @@
                     <navigationItem key="navigationItem" title="Trips" id="gHc-91-SCN"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="contentContainer" destination="9nR-8T-xwN" id="BRe-Xg-Knn"/>
                         <outlet property="menuIcon" destination="xez-1Z-8oY" id="Sf6-QK-6cq"/>
                         <outlet property="tableView" destination="hIO-ax-Arp" id="0NL-dq-gDo"/>
                         <outlet property="tableViewHeight" destination="MNO-GW-Oh9" id="rc3-aV-swa"/>
