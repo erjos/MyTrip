@@ -37,6 +37,8 @@
 		86C9DA0D1EC4DC6F001BE609 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */; };
 		86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD991B1ED0E2AB00668255 /* FinishViewController.swift */; };
 		86DD995C1ED0EB7100668255 /* Trip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */; };
+		86F6A80D1EFB1A7F007C34D9 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */; };
+		86F6A80E1EFB1A7F007C34D9 /* TripListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		86DD991B1ED0E2AB00668255 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		86DD995B1ED0EB7100668255 /* Trip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trip.xcdatamodel; sourceTree = "<group>"; };
+		86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,8 @@
 				869473ED1EC236440040D717 /* Trip.swift */,
 				86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */,
 				86337AFB1EFAE266008D52AE /* MainViewController.swift */,
+				86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */,
+				86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				863CA20F1EC15B6E000D0044 /* LaunchScreen.storyboard in Resources */,
+				86F6A80E1EFB1A7F007C34D9 /* TripListViewController.xib in Resources */,
 				863CA20C1EC15B6E000D0044 /* Assets.xcassets in Resources */,
 				863CA20A1EC15B6E000D0044 /* Main.storyboard in Resources */,
 			);
@@ -364,6 +371,7 @@
 				86C8AB971ED2008600959707 /* MyTripViewController.swift in Sources */,
 				869473EE1EC236440040D717 /* Trip.swift in Sources */,
 				86C8AB991ED20B8A00959707 /* TripsViewController.swift in Sources */,
+				86F6A80D1EFB1A7F007C34D9 /* TripListViewController.swift in Sources */,
 				864EB4971EC214D900223D2C /* TripNameViewController.swift in Sources */,
 				863CA2051EC15B6E000D0044 /* AppDelegate.swift in Sources */,
 				86DD991C1ED0E2AB00668255 /* FinishViewController.swift in Sources */,

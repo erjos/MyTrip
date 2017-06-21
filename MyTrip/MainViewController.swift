@@ -61,7 +61,9 @@ class MainViewController: UIViewController {
 
 //may not need to make this a delegate...
 extension MainViewController: UIGestureRecognizerDelegate{
-    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        return touch.view == gestureRecognizer.view
+    }
 }
 
 extension MainViewController: UITableViewDataSource{
@@ -81,7 +83,7 @@ extension MainViewController: UITableViewDataSource{
         } else {
             text = "Settings"
         }
-        cell.backgroundColor = UIColor.lightGray
+        cell.backgroundColor = UIColor(red: 90/255, green: 90/255, blue: 255/255, alpha: 50/255)
         cell.textLabel?.text = text
         return cell
     }
