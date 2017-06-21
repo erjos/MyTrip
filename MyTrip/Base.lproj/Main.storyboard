@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -312,16 +313,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wS-aBU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-wS-aBU" userLabel="MenuBar">
                                 <rect key="frame" x="0.0" y="20" width="375" height="68"/>
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="xez-1Z-8oY">
-                                        <rect key="frame" x="11" y="17" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="xez-1Z-8oY">
+                                        <rect key="frame" x="11" y="15" width="32" height="38"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udX-tg-dmC">
-                                        <rect key="frame" x="157" y="20" width="60" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udX-tg-dmC">
+                                        <rect key="frame" x="162" y="18.5" width="50.5" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -330,6 +329,11 @@
                                 <color key="backgroundColor" red="0.35300440440000003" green="0.35455117450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="4bC-Cf-Pe7"/>
+                                    <constraint firstItem="xez-1Z-8oY" firstAttribute="leading" secondItem="PgX-wS-aBU" secondAttribute="leading" constant="11" id="MDw-ad-wJ7"/>
+                                    <constraint firstItem="xez-1Z-8oY" firstAttribute="top" secondItem="PgX-wS-aBU" secondAttribute="top" constant="15" id="OQR-D0-wYm"/>
+                                    <constraint firstItem="udX-tg-dmC" firstAttribute="centerY" secondItem="PgX-wS-aBU" secondAttribute="centerY" id="RqW-37-PME"/>
+                                    <constraint firstItem="udX-tg-dmC" firstAttribute="centerX" secondItem="PgX-wS-aBU" secondAttribute="centerX" id="k5n-r6-DEX"/>
+                                    <constraint firstAttribute="bottom" secondItem="xez-1Z-8oY" secondAttribute="bottom" constant="15" id="tEM-kQ-MPk"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIO-ax-Arp">
@@ -381,15 +385,32 @@
                                     <outlet property="delegate" destination="QEJ-bw-xiP" id="djS-tp-WBS"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZA5-Ug-Jvr">
+                                <rect key="frame" x="16" y="263" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Rba-g3-dMx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfR-xf-mir">
+                                <rect key="frame" x="16" y="203" width="94" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PgX-wS-aBU" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leading" id="1g4-4X-uX4"/>
                             <constraint firstAttribute="trailing" secondItem="PgX-wS-aBU" secondAttribute="trailing" id="1if-i5-ZAQ"/>
                             <constraint firstItem="hIO-ax-Arp" firstAttribute="top" secondItem="LFC-2i-9Ga" secondAttribute="bottom" constant="66" id="3RH-3F-xjC"/>
+                            <constraint firstItem="HfR-xf-mir" firstAttribute="top" secondItem="hIO-ax-Arp" secondAttribute="bottom" constant="26" id="3yJ-Mw-swe"/>
                             <constraint firstAttribute="trailing" secondItem="hIO-ax-Arp" secondAttribute="trailing" id="5UI-2x-VHe"/>
+                            <constraint firstItem="HfR-xf-mir" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leadingMargin" id="d4u-0t-glL"/>
+                            <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="top" secondItem="HfR-xf-mir" secondAttribute="bottom" constant="28" id="dQG-RS-XDS"/>
                             <constraint firstItem="PgX-wS-aBU" firstAttribute="top" secondItem="ld8-BR-uuj" secondAttribute="top" constant="20" id="jDi-F7-mEP"/>
                             <constraint firstItem="hIO-ax-Arp" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leading" id="lE1-nQ-j9D"/>
+                            <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leadingMargin" id="uwV-Zu-kJt"/>
+                            <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="trailing" secondItem="ld8-BR-uuj" secondAttribute="trailingMargin" id="wQT-tv-FpR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trips" id="gHc-91-SCN"/>
@@ -402,10 +423,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2va-IY-bSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1349.5999999999999" y="102.99850074962519"/>
+            <point key="canvasLocation" x="1349.2753623188407" y="102.71739130434783"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="816" height="612"/>
         <image name="MenuIconWhite" width="32" height="32"/>
     </resources>
 </document>
