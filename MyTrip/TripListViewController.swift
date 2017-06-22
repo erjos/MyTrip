@@ -15,8 +15,15 @@ class TripListViewController: UIViewController {
         //this only works if the view controllers are embedded in a navigation view controller
         //self.navigationController?.pushViewController(vc!, animated: true)
         
-        //this is the alternative I think...
-        self.present(vc!, animated: true, completion: nil)
+        //Have to do this if you want a right to left presentation and no nav controller is present
+        let transition = CATransition()
+        transition.duration = 0.25
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromRight
+        view.window!.layer.add(transition, forKey: kCATransition)
+        
+        //this by itself will present with no animation - if animated is true, it will execute according to the presentation style/ transition that is set in the interface builder
+        self.present(vc!, animated: false, completion: nil)
     }
     
     @IBOutlet weak var noTripButton: UIButton!

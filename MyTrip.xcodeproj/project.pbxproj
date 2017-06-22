@@ -177,6 +177,7 @@
 				86337AFB1EFAE266008D52AE /* MainViewController.swift */,
 				86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */,
 				86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */,
+				864EB4961EC214D900223D2C /* TripNameViewController.swift */,
 			);
 			path = MyTrip;
 			sourceTree = "<group>";
@@ -225,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				864EB4751EC203DD00223D2C /* HomeScreenViewControllerTableViewController.swift */,
-				864EB4961EC214D900223D2C /* TripNameViewController.swift */,
 				86C9DA0C1EC4DC6F001BE609 /* LocationViewController.swift */,
 				86DD991B1ED0E2AB00668255 /* FinishViewController.swift */,
 				86C8AB961ED2008600959707 /* MyTripViewController.swift */,
