@@ -12,12 +12,19 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         //hide the navigation bar
+        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.handleMenuTap(_:)))
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableViewHeight.constant = 0
         setupTapGesture()
         setupCloseMenuTapGesture()
         setupTripListTable()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setupTripListTable(){
