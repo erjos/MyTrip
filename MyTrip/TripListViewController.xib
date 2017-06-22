@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripListViewController" customModule="MyTrip" customModuleProvider="target">
             <connections>
+                <outlet property="noTripButton" destination="W4y-fB-9pF" id="pdF-ny-MTZ"/>
+                <outlet property="noTripView" destination="06N-VU-mE6" id="KVb-to-7dp"/>
                 <outlet property="noTripsLabel" destination="IdZ-AW-qt2" id="fSt-X4-46n"/>
                 <outlet property="tripListTableView" destination="sTD-og-vet" id="zHe-Kj-Wwi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -35,6 +37,9 @@
                             <state key="normal" title="Start here">
                                 <color key="titleColor" red="0.35300440440000003" green="0.35455117450000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="noTripButtonAction:" destination="-1" eventType="touchUpInside" id="BRu-SD-YDw"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

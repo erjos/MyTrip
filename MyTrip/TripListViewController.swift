@@ -5,6 +5,13 @@ class TripListViewController: UIViewController {
     
     var trips : [NSManagedObject] = []
     
+    //will have to send to the new trip builder
+    @IBAction func noTripButtonAction(_ sender: Any) {
+        
+    }
+    
+    @IBOutlet weak var noTripButton: UIButton!
+    @IBOutlet weak var noTripView: UIView!
     @IBOutlet weak var noTripsLabel: UILabel!
     @IBOutlet weak var tripListTableView: UITableView!
     
@@ -12,7 +19,7 @@ class TripListViewController: UIViewController {
         super.viewDidLoad()
         tripListTableView.dataSource = self
         tripListTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        noTripsLabel.isHidden = true
+        noTripView.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,7 +37,7 @@ class TripListViewController: UIViewController {
         
         if( trips.count == 0){
             tripListTableView.isHidden = true
-            noTripsLabel.isHidden = false
+            noTripView.isHidden = false
         }
         
     }
