@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MyTrip
-//
-//  Created by Joseph, Ethan on 5/8/17.
-//  Copyright © 2017 Joseph, Ethan. All rights reserved.
-//
-
 import UIKit
 import GooglePlaces
 import CoreData

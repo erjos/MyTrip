@@ -11,7 +11,12 @@ class TripListViewController: UIViewController {
         
         //theres also an instantiateViewController with identifier method
         let vc = storyBoard.instantiateInitialViewController()
-        self.navigationController?.pushViewController(vc!, animated: true)
+        
+        //this only works if the view controllers are embedded in a navigation view controller
+        //self.navigationController?.pushViewController(vc!, animated: true)
+        
+        //this is the alternative I think...
+        self.present(vc!, animated: true, completion: nil)
     }
     
     @IBOutlet weak var noTripButton: UIButton!
