@@ -368,7 +368,7 @@
                                     <outlet property="delegate" destination="QEJ-bw-xiP" id="djS-tp-WBS"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZA5-Ug-Jvr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TripThumbnail1" translatesAutoresizingMaskIntoConstraints="NO" id="ZA5-Ug-Jvr">
                                 <rect key="frame" x="16" y="265" width="343" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Rba-g3-dMx"/>
@@ -420,7 +420,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="816" height="612"/>
         <image name="MenuIconWhite" width="32" height="32"/>
+        <image name="TripThumbnail1" width="816" height="612"/>
     </resources>
 </document>
