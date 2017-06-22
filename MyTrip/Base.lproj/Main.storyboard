@@ -320,7 +320,7 @@
                                         <rect key="frame" x="11" y="15" width="32" height="38"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udX-tg-dmC">
-                                        <rect key="frame" x="162" y="18.5" width="50.5" height="31.5"/>
+                                        <rect key="frame" x="162" y="18" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -397,9 +397,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-8T-xwN" userLabel="Content Container">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-8T-xwN" userLabel="Content Container">
                                 <rect key="frame" x="16" y="415" width="343" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -410,8 +409,12 @@
                             <constraint firstItem="HfR-xf-mir" firstAttribute="top" secondItem="hIO-ax-Arp" secondAttribute="bottom" constant="26" id="3yJ-Mw-swe"/>
                             <constraint firstAttribute="trailing" secondItem="hIO-ax-Arp" secondAttribute="trailing" id="5UI-2x-VHe"/>
                             <constraint firstItem="hIO-ax-Arp" firstAttribute="top" secondItem="PgX-wS-aBU" secondAttribute="bottom" id="AaG-hx-wdh"/>
+                            <constraint firstAttribute="bottom" secondItem="9nR-8T-xwN" secondAttribute="bottom" constant="20" symbolic="YES" id="TbR-kd-Xad"/>
+                            <constraint firstItem="9nR-8T-xwN" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leadingMargin" id="alc-Dt-5Xf"/>
+                            <constraint firstItem="9nR-8T-xwN" firstAttribute="trailing" secondItem="ld8-BR-uuj" secondAttribute="trailingMargin" id="cQj-jE-iGR"/>
                             <constraint firstItem="HfR-xf-mir" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leadingMargin" id="d4u-0t-glL"/>
                             <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="top" secondItem="HfR-xf-mir" secondAttribute="bottom" constant="28" id="dQG-RS-XDS"/>
+                            <constraint firstItem="9nR-8T-xwN" firstAttribute="top" secondItem="ZA5-Ug-Jvr" secondAttribute="bottom" constant="22" id="gU0-iZ-4gV"/>
                             <constraint firstItem="PgX-wS-aBU" firstAttribute="top" secondItem="ld8-BR-uuj" secondAttribute="top" constant="20" id="jDi-F7-mEP"/>
                             <constraint firstItem="hIO-ax-Arp" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leading" id="lE1-nQ-j9D"/>
                             <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="leading" secondItem="ld8-BR-uuj" secondAttribute="leadingMargin" id="uwV-Zu-kJt"/>
