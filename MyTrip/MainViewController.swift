@@ -13,8 +13,13 @@ class MainViewController: UIViewController {
 
         //hide the navigation bar
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.navigationController?.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.handleMenuTap(_:)))
+        //self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        let image = UIImage(named: "MenuIconWhite")
+        
+        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(self.handleMenuTap(_:)))
+        
+        self.navigationController?.navigationBar.backItem?.leftBarButtonItem = button
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableViewHeight.constant = 0
@@ -24,7 +29,13 @@ class MainViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-         self.navigationController?.setNavigationBarHidden(true, animated: false)
+         //self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        let image = UIImage(named: "MenuIconWhite")
+        
+        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(self.handleMenuTap(_:)))
+        
+        self.navigationController?.navigationBar.backItem?.rightBarButtonItem = button
     }
     
     func setupTripListTable(){
@@ -39,7 +50,7 @@ class MainViewController: UIViewController {
     func setupTapGesture() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleMenuTap(_:)))
         tap.delegate = self
-        menuIcon.addGestureRecognizer(tap)
+       // menuIcon.addGestureRecognizer(tap)
     }
     
     func setupCloseMenuTapGesture(){
