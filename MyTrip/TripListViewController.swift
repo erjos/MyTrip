@@ -7,7 +7,11 @@ class TripListViewController: UIViewController {
     
     //will have to send to the new trip builder
     @IBAction func noTripButtonAction(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "NewTrip", bundle: nil)
         
+        //theres also an instantiateViewController with identifier method
+        let vc = storyBoard.instantiateInitialViewController()
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     @IBOutlet weak var noTripButton: UIButton!

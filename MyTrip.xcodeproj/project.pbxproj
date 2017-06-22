@@ -39,6 +39,7 @@
 		86DD995C1ED0EB7100668255 /* Trip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86DD995A1ED0EB7100668255 /* Trip.xcdatamodeld */; };
 		86F6A80D1EFB1A7F007C34D9 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */; };
 		86F6A80E1EFB1A7F007C34D9 /* TripListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */; };
+		86F6A8101EFB4CC7007C34D9 /* NewTrip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F6A80F1EFB4CC7007C34D9 /* NewTrip.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		86DD995B1ED0EB7100668255 /* Trip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trip.xcdatamodel; sourceTree = "<group>"; };
 		86F6A80B1EFB1A7F007C34D9 /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
 		86F6A80C1EFB1A7F007C34D9 /* TripListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripListViewController.xib; sourceTree = "<group>"; };
+		86F6A80F1EFB4CC7007C34D9 /* NewTrip.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewTrip.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				86DD999A1ED1F87100668255 /* PageViewControllers */,
 				863CA2041EC15B6E000D0044 /* AppDelegate.swift */,
 				863CA2081EC15B6E000D0044 /* Main.storyboard */,
+				86F6A80F1EFB4CC7007C34D9 /* NewTrip.storyboard */,
 				863CA20B1EC15B6E000D0044 /* Assets.xcassets */,
 				863CA20D1EC15B6E000D0044 /* LaunchScreen.storyboard */,
 				863CA2101EC15B6E000D0044 /* Info.plist */,
@@ -341,6 +344,7 @@
 			files = (
 				863CA20F1EC15B6E000D0044 /* LaunchScreen.storyboard in Resources */,
 				86F6A80E1EFB1A7F007C34D9 /* TripListViewController.xib in Resources */,
+				86F6A8101EFB4CC7007C34D9 /* NewTrip.storyboard in Resources */,
 				863CA20C1EC15B6E000D0044 /* Assets.xcassets in Resources */,
 				863CA20A1EC15B6E000D0044 /* Main.storyboard in Resources */,
 			);
