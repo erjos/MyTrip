@@ -3,10 +3,21 @@ import Foundation
 
 class MainViewController: UIViewController {
 
-    @IBOutlet weak var menuIcon: UIImageView!
     @IBOutlet weak var contentContainer: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
+    @IBAction func menuTapAction(_ sender: Any) {
+        if(tableViewHeight.constant == 0){
+            tableViewHeight.constant = 91
+        }else{
+            collapseMenu()
+        }
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut
+            , animations: {
+                self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +26,11 @@ class MainViewController: UIViewController {
         
         //self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-        let image = UIImage(named: "MenuIconWhite")
+//        let image = UIImage(named: "MenuIconWhite")
+//        
+//        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(self.handleMenuTap(_:)))
         
-        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(self.handleMenuTap(_:)))
-        
-        self.navigationController?.navigationBar.backItem?.leftBarButtonItem = button
+        self.navigationController?.navigationBar.backItem?.leftBarButtonItem?.action = #selector(self.handleMenuTap(_:))
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableViewHeight.constant = 0

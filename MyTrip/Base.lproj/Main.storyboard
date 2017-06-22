@@ -364,8 +364,12 @@
                             <constraint firstItem="ZA5-Ug-Jvr" firstAttribute="trailing" secondItem="ld8-BR-uuj" secondAttribute="trailingMargin" id="wQT-tv-FpR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gHc-91-SCN">
-                        <barButtonItem key="leftBarButtonItem" image="MenuIconWhite" id="Exa-EX-SeA"/>
+                    <navigationItem key="navigationItem" title="Trips" id="gHc-91-SCN">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIconWhite" id="Exa-EX-SeA">
+                            <connections>
+                                <action selector="menuTapAction:" destination="QEJ-bw-xiP" id="M8c-PE-x4D"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentContainer" destination="9nR-8T-xwN" id="BRe-Xg-Knn"/>
@@ -378,7 +382,7 @@
             </objects>
             <point key="canvasLocation" x="2294" y="107"/>
         </scene>
-        <!--Trip Name View Controller-->
+        <!--New Trip-->
         <scene sceneID="PL6-5I-ory">
             <objects>
                 <viewController storyboardIdentifier="TripName" id="RV3-DZ-GTn" customClass="TripNameViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
@@ -418,13 +422,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Trip" id="Nd2-wk-91j"/>
                     <connections>
                         <outlet property="tripNameEntry" destination="0yu-KM-eJL" id="b0D-Rf-CXw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvz-Iq-eeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3049" y="107"/>
+            <point key="canvasLocation" x="3015" y="107"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FR9-PU-H2t">
