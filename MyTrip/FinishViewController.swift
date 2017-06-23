@@ -20,7 +20,7 @@ class FinishViewController: UIViewController {
     
     @IBAction func startPlanning(_ sender: Any) {
         self.saveTrip(name!, placeName!)
-        performSegue(withIdentifier: "FinishToTrip", sender: self)
+        performSegue(withIdentifier: "MyTrip", sender: self)
     }
     
     //Save trip to core data - will fetch on the next page
