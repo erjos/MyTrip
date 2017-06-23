@@ -12,7 +12,7 @@ class TripNameViewController: UIViewController {
     
     //this won't work anymore, will need to recreate the segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "NameToLocation"){
+        if(segue.identifier == "Location"){
             let controller = segue.destination as! LocationViewController
             controller.tripName = tripNameEntry.text
         }

@@ -538,7 +538,7 @@
 				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.erj.MyTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -555,7 +555,7 @@
 				);
 				INFOPLIST_FILE = MyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.erj.MyTrip;
+				PRODUCT_BUNDLE_IDENTIFIER = erj.MyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

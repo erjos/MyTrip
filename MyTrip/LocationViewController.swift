@@ -1,11 +1,3 @@
-//
-//  LocationViewController.swift
-//  MyTrip
-//
-//  Created by Joseph, Ethan on 5/11/17.
-//  Copyright © 2017 Joseph, Ethan. All rights reserved.
-//
-
 import UIKit
 import GooglePlaces
 
@@ -14,6 +6,7 @@ class LocationViewController: UIViewController {
     var tripName: String?
     var place: GMSPlace?
 
+    @IBOutlet weak var tripNameLabel: UILabel!
     @IBAction func SearchLocation(_ sender: UIButton) {
         openGooglePlacesForm()
     }
@@ -28,6 +21,12 @@ class LocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tripNameLabel.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tripNameLabel.text = tripName
+        tripNameLabel.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,7 +59,7 @@ extension LocationViewController: GMSAutocompleteViewControllerDelegate{
         self.place = place
         
         //create the segue from one VC to another (don't need a button if you want to execute programmatically)
-        performSegue(withIdentifier: "LocationToFinish", sender: self)
+        //performSegue(withIdentifier: "LocationToFinish", sender: self)
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
