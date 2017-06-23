@@ -12,7 +12,7 @@ class LocationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "LocationToFinish"){
+        if(segue.identifier == "Finish"){
             let controller = segue.destination as! FinishViewController
             controller.name = self.tripName
             controller.placeName = self.place?.name
@@ -58,8 +58,8 @@ extension LocationViewController: GMSAutocompleteViewControllerDelegate{
         
         self.place = place
         
-        //create the segue from one VC to another (don't need a button if you want to execute programmatically)
-        //performSegue(withIdentifier: "LocationToFinish", sender: self)
+       
+        performSegue(withIdentifier: "Finish", sender: self)
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
