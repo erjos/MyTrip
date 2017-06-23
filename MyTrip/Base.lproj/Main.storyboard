@@ -157,7 +157,7 @@
         <!--Main-->
         <scene sceneID="adu-eS-mEx">
             <objects>
-                <viewController id="QEJ-bw-xiP" userLabel="Main" customClass="MainViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="QEJ-bw-xiP" userLabel="Main" customClass="MainViewController" customModule="MyTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LFC-2i-9Ga"/>
                         <viewControllerLayoutGuide type="bottom" id="M89-qs-CRu"/>
@@ -254,6 +254,7 @@
                                 <action selector="menuTapAction:" destination="QEJ-bw-xiP" id="M8c-PE-x4D"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VVX-3z-cvW"/>
                     </navigationItem>
                     <connections>
                         <outlet property="contentContainer" destination="9nR-8T-xwN" id="BRe-Xg-Knn"/>

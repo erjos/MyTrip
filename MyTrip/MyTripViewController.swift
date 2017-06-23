@@ -20,7 +20,13 @@ class MyTripViewController: UIViewController {
     }
     
     func backButtonPressed(_ sender: UIBarButtonItem){
-        performSegue(withIdentifier: "MyTripToMenu", sender: self)
+        //performSegue(withIdentifier: "Main", sender: self)
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyBoard.instantiateViewController(withIdentifier: "Main")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
